@@ -8,6 +8,13 @@ body {
 	font-family: 'Poppins', sans-serif;
 } 
 
+.container {
+	padding: 80px 0px;
+	margin: 0 auto;
+	max-width: 100%;
+  text-align: center;
+}
+
 /*--------- typography section - start --------------*/
 
 .typewriter h1 {
