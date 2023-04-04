@@ -152,7 +152,28 @@ h2 {
 
 /*--------- hero section - end --------------*/
 
+/*--------- about section - start --------------*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 310px;
+  }
+
+/*--------- about section - end --------------*/
+
 /*--------- my skills section - start --------------*/
+
+.skills {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 80px 95px;
+gap: 63px;
+background: #F7F7F5;
+
+}
 
 .flex-container {
   display: flex;
@@ -160,6 +181,7 @@ h2 {
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
+ 
 }
 
 .skill-card {
@@ -169,11 +191,22 @@ flex-direction: column;
 align-items: center;
 padding: 40px 20px;
 gap: 20px;
+border: 1px solid rgba(170, 163, 163, 1);
+background-color: white;
 }
 
 /*--------- my skills section - end --------------*/
 
 /*--------- my work section - start --------------*/
+
+.work{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 80px 0px;
+gap: 63px;
+
+}
 
 .grid-item{
   background-color: rgba(255, 255, 255, 0.8);
@@ -185,9 +218,8 @@ gap: 20px;
 
 .work-slider{
   display: inline-grid;
+  grid-template-rows: 1fr;
   grid-template-areas: 'myArea myArea';
-  padding: 10px;
-  height: 225px;
 }
 
 /*--------- my work section - end --------------*/
@@ -215,3 +247,5 @@ gap: 20px;
   }
 
   /*--------- footer section - end --------------*/
+
+  /*--------- media queries ----------------------*/
