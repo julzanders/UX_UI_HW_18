@@ -36,7 +36,7 @@ text-decoration: none;
   font-weight: bold;
   color: white;
   font-family: 'Libre Baskerville', serif;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 }
 
 h2 {
@@ -119,7 +119,7 @@ p {
 /*--------- hero section - start --------------*/
 
  .hero {
-    height: 600px;
+    height: 700px;
     padding: 25px;
     background-image: url('../images/hero-image.png');
     /*placeholder image until I get one of me at desk*/
@@ -235,6 +235,9 @@ gap: 63px;
   border: 1px solid rgba(170, 163, 163, 1);
   text-align: center;
   grid-area: 'myArea';
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
 .work-slider{
@@ -242,6 +245,62 @@ gap: 63px;
   grid-template-rows: 1fr;
   grid-template-areas: 'myArea myArea';
 }
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.grid-item:hover img {
+  opacity: 0.1;
+}
+
+.grid-item:hover .grid-item-overlay {
+  opacity: 1;
+}
+
+.grid-item .grid-item-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  color: #2D2D2D;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.grid-item .grid-item-overlay h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.grid-item .grid-item-overlay p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.grid-item .grid-item-overlay h4,
+.grid-item .grid-item-overlay p {
+  text-align: center;
+}
+
+
+
+
 
 
 /*--------- my work section - end --------------*/
