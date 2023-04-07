@@ -430,3 +430,21 @@ gap: 63px;
     }
   
  }
+
+ @media only screen and (max-width: 600px){
+  footer {
+    justify-content: center;
+  }
+  
+ }
+
+ @media only screen and (max-width: 600px){
+  footer .nav-primary ul {
+    flex-direction: column;
+  }
+
+  footer .nav-primary ul li{
+    padding-bottom: 20px;
+  }
+  
+ }
